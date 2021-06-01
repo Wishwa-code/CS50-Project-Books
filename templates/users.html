@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flights
+{% endblock %}
+
+{% block body %}
+    <h1>All Users</h1>
+
+    <ul>
+        {% for users in users %}
+            <li>
+                    {{users.id}} :
+                    <ol>
+                     <li>{{ users.username }}</li>
+                     <li>{{ users.password }}</li>
+                    </ol>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/login"><input type="button" value="login"></a>
+
+{% endblock %}

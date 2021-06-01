@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flights
+{% endblock %}
+
+{% block body %}
+
+    <div class="login">
+        
+    </div>
+    <div class="logbox">
+        
+        <form action="{{ url_for('register') }}" method="post">
+
+
+                <input name="username" placeholder="Username" type="text" required="">
+    
+                <input name="password" placeholder="Password" type="password" required="">
+    
+                <input name="firstname" placeholder="firstname" type="text" required="">
+
+                <input name="lastname" placeholder="lastname" type="text" required="">
+
+                <input name="email" placeholder="email" type="text" required="">
+
+                <button class="button button7">Register</button>
+
+        </form>
+          
+    </div>
+{% endblock %}
